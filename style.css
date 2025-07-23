@@ -19,6 +19,23 @@
 img {
   max-width: 100%;
 }
+/* animation */
+@keyframes banner-player-animation {
+  0% {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-50x);
+    color: orange;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    color: yellowgreen;
+  }
+}
 /* custom styles */
 .banner {
   display: flex;
@@ -27,6 +44,8 @@ img {
   color: white;
   border-radius: 15px;
   margin: 50px auto;
+
+  animation: banner-player-animation 1s ease-in forwards;
 }
 .banner-left {
   padding-left: 45px;
@@ -47,6 +66,8 @@ img {
 }
 .banner-right img {
   display: block;
+
+  animation: banner-player-animation 1s ease-in infinite;
 }
 /* upcomming matches */
 .upcomming-matches {
